@@ -1,0 +1,440 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    background-repeat: no-repeat;
+   background-size: 100%;
+}
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.header{
+    background-color:  #24262b;
+    height: 100px;
+    
+}
+.main-menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+     
+}
+
+.main-menu li {
+    margin: 20px;
+    list-style-type: none;
+    display: block;
+    position: relative;
+}
+.main-menu li a:hover{
+    color: blue;
+    
+}
+.main-menu li a{
+    text-decoration: none;
+  color: white;
+}
+
+
+.search {
+    max-width: 960px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: flex-end;
+ 
+  
+}
+
+.search-btn{
+    list-style-type: none;
+    margin-right: 10px;
+    padding-right: 40px;
+    padding-left: 50px;
+     position: relative;
+}
+.search-btn::after{
+    content: "";
+    position: absolute;
+    right: 4px;
+    top:-2px;
+}
+.cart_report{
+    position: absolute;
+    top: 50%;
+    right: 19px;
+    background-color: white;
+    width: 410px;
+    height: 200px;
+    border-radius: 2px;
+display: none;
+z-index: 1;
+border:3px solid black;
+}
+.cart_report::after{
+    content: "";
+    position: absolute;
+    right: 8px;
+    top:-30px;
+    border: 20px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+.product_img{
+    width: 100%;
+    height: 100%;
+}
+.search-btn button:hover{
+    background-color: blue;
+    
+}
+input{
+    width: 600px;
+    border-radius: 5px;
+    border-style: none;
+}
+.logo img{
+    width: 68px;
+    height: 58px;
+   margin-top: -20px;
+  
+}
+button{
+    border-radius: 3px;
+    border-style: none;
+}
+i:hover{
+    color: blue;
+}
+ .fa-shopping-cart{
+    color: white;
+  
+}
+.search-btn:hover  .cart_report{
+    display: block;
+}
+/*thong bao*/
+.notification{
+   position: absolute;
+    top:  150%;
+    background-color: white;
+    border-radius: 5px;
+    width: 404px;
+    border: 3px solid black;
+    background-color: whitesmoke;
+    cursor: default;
+    transform-origin: calc(100%-20px) top;
+    animation: headernotifygrid ease-in 0.2s;
+display: none;
+z-index: 1;
+}
+.notification::before{
+      content: "";
+      border-width: 20px 70px;
+      border-style: solid;
+      border-color: transparent transparent white transparent;
+      position: absolute;
+     border-radius: 5px;
+      top: -29px;
+  
+}
+.notification::after{
+    content: "";
+    display: block;
+    position: absolute;
+    right:0;
+    top:0;
+    width: 90px;
+    height: 20px;
+    background-color: white;
+    border-radius: 5px;
+    
+  
+}
+
+.header_notify-header{
+      height: 40px;
+    background-color: white;
+  
+}
+.header_notify-header h3{
+    color: black;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+    user-select: none;
+}
+.header_notify-list{
+    padding-left: 0;
+}
+.header_notify-item{
+    display: flex;
+}
+.header_notify-item:hover{
+    background-color: wheat;
+}
+.header_notify-item--viewd{
+    background-color: rgba(238,75,43,0.1);
+}
+.header_notify-link{
+       display: flex;
+       padding: 12px;
+       text-decoration: none;
+       
+}
+.header_notify-img{
+    width: 48px;
+    object-fit: contain;
+}
+.header_notify-info{
+    margin-left: 12px;
+    
+}
+.header_notify-name{
+    display: block;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 600;
+}
+.header_notify-descrition{
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: black;
+    margin: 4px 0 0 0;
+}
+.header_notify-footer{
+   display: flex;
+   
+}
+.main-menu li .header_notify-footer-btn{
+    text-decoration: none;
+    color: black;
+    padding: 4px 16px;
+    margin: auto;
+}
+
+.thongbao:hover .notification{
+    display: block;
+}
+  
+
+/*container*/
+
+/*product*/
+.home-product-item{
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: white;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 0 0.1rem 0.125rem rgba(0,0,0,.1);
+    transition: transfrom linear 0.1s;
+    will-change: transfrom;
+}
+.home-product-item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 1px 20px rgba(0,0,0,0.05);
+}
+.home-product-item-img{
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home-product-item-name{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: black;
+    line-height: 1.8rem;
+    height: 1.8rem;
+    margin: 10px 10px 4px;
+    overflow: hidden;
+    display: block;
+    
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.home-product-item_price{
+    display: flex;
+   
+    align-items: baseline;
+    flex-wrap:  wrap;
+}
+.home-product-item_price-old{
+     margin-left: 10px;
+    font-size: 1.3rem;
+    color: #666;
+    text-decoration: line-through;
+}
+.home-product-item_price-current{
+    font-size: 1.6rem;
+    color: red;
+    margin-left: 8px;
+}
+.home-product-item_action{
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 10px 0px;
+}
+.home-product-item_heart-like{
+    color: red;
+    font-size: 1.4rem;
+}
+i.home-product-item_heart-like-icon-fill{
+    color: red;
+    display: none;
+}
+.home-product-item_heart-like .home-product-item_heart-liked-icon-fill{
+    display: inline-block
+}
+.home-product-item_heart-like .home-product-item_heart-like-icon-emty{
+    display: none;
+}
+.home-product-item_rating{
+   font-size: 0.5rem; 
+   transform-origin: right;
+   margin-left: auto;
+   position: relative;
+   top: 9px;
+}
+.home-product-item_rating-gold{
+    color: gold;
+}
+.home-product-item_sold{
+    font-size: 1.4rem;
+    color: black;
+    margin-left: 4px;
+}
+.home-product-item_origin{
+    display: flex;
+    justify-content: space-between;
+   margin: 3px  10px 0;
+   color: #595959;
+   font-size: 1.2rem;
+   font-weight: 300;
+}
+.home-product-item-name{
+    margin-left: auto;
+}
+
+
+
+.home-product-item_favourite{
+    position: absolute;
+    top: 25px;
+    left: -6px;
+    color: white;
+    background-color: red;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+.home-product-item_favourite i{
+    font-size: 0.9rem;
+    margin: 0 2px 5px 5px;
+}
+.home-product-item_sale-off{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 36px;
+    text-align: center;
+    background-color: gold;
+    
+}
+.home-product-item_sale-off-pecent{
+    color: red;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+}
+.home-product-item_sale-off-label{
+   color: black;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+        position: relative;
+        top:-8px;
+        right: -1px;
+}
+/*footer*/
+.container-footer{
+    max-width: 1170px;
+  
+    margin: auto ;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col ul{
+    list-style: none;
+    padding: 0;
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 22.4% ;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom:-10px;
+    background-color: #e91e63;
+    height:2px;
+    box-sizing: border-box;
+    width:50px;
+}
+.footer-col ul li{
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+     text-transform: capitalize;
+     color: white;
+     text-decoration: none;
+     font-weight: 300;
+     color:#bbbbbb;
+     display: block;
+     transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: white;
+    padding-left: 8px;
+}
+.footer-col .footer-icon a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color:white;
+    transition: all 0.3s ease;
+}
+.footer-col .footer-icon a:hover{
+    color:#24262b;
+    background-color: white;
+}

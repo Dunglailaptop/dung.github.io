@@ -1,0 +1,329 @@
+.grid_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.grid_column-2{
+    padding-left: 24px;
+    padding-right: 12px;
+   width: 20.8333%;
+}
+.grid_column-2-4{
+    padding-left: 10px;
+/*    padding-right: 12px;*/
+   width: 17.77%;
+}
+.grid_column-8{
+     padding-left: 12px;
+    padding-right: 2px;
+    margin-bottom: 10px;
+   width: 74.1667%;
+}
+.app_container{
+background-color: lavender;
+}
+.app_content{
+    padding-top: 30px;
+}
+.category{
+    border-radius: 5px;
+    background-color: white;
+}
+.category_heading{
+    font-size:1.8rem;
+    padding: 8px 8px;
+    border-bottom: 1px solid black;
+    margin-top:  0;
+}
+.category_heading .fas fa-list-ul{
+    font-size: 1.4rem;
+    margin-right: 4px;
+    position: relative;
+    top: -1px;
+}
+.category-list{
+    padding: 0 0 8px 0;
+    list-style: none;
+}
+.category-item{
+    border: 1px;
+    background-color: white;
+    
+}
+.category-item:hover{
+    background-color: whitesmoke;
+}
+.category-item-active .category-item_link{
+    color: red;
+}
+/*.category-item-active::before{
+    position: absolute;
+    top: 30%;
+
+    
+    content: "";
+    border: 4px solid;
+    transform: translateY(calc(30% - 1px));
+    border-color: transparent transparent transparent red;
+    
+    
+}*/
+.category-item_link{
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 4px 16px;
+    
+}
+.category-item_link:hover{
+    color: red;
+}
+.btn{
+    min-width: 124px;
+    height: 34px;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: black;
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+}
+.btn:hover{
+    background-color: red;
+    color: white;
+}
+.home-filter{
+    
+    display: flex;
+    align-items: center;
+    padding: 12px 22px;
+    border-radius: 2px;
+    background-color: white;
+    width: 95%;
+}
+.home-product{
+    width: 105%;
+}
+.home-filter-label{
+    font-size: 1.4rem;
+    color: black;
+    margin-right: 16px;
+}
+.home-filter .btn{
+    min-width: 90px;
+    margin-right: 12px;
+}
+.home-filter_page{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.home-filter_page-num{
+    font-size: 1.4rem;
+    color: black;
+    margin-right: 22px;
+}
+.home-filter_page-current{
+    color:red;
+}
+.home-filter_page-control{
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    width: 72px;
+    height: 36px;
+}
+.home-filter_page-icon
+{
+    margin: auto;
+    font-size: 1.4rem;
+    color: black;
+}
+.home-filter_page-btn{
+    flex: 1px;
+   display: inline-flex;
+    background-color: whitesmoke;
+    text-decoration: none;
+    align-items: center;
+}
+.select-input{
+    position: relative;
+    min-width: 120px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.select-input-label{
+    font-size: 1.4rem;
+}
+.select-input-icon{
+    font-size: 1.4rem;
+    color: black;
+    position: relative;
+    top: 1px;
+}
+.select-input:hover .select-input_list{
+    display: block;
+}
+.select-input_list{
+    position: absolute;
+    top:0;
+    left: 0;
+    top: -85px;
+    border-radius: 2px;
+    background-color: white;
+   
+    padding: 8px 16px;
+    list-style: none;
+ display: none;
+}
+.select-input_link{
+   
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px 0;
+}
+.select-input_link:hover{
+    color: red;
+}
+.row{
+    display: inline-flex;
+}
+.col-2-1{
+    width: 50%;
+    padding-right: 5px;
+    background-color: whitesmoke;
+}
+.col-2-1 img{
+    width: 100%;
+}
+.col-2{
+    border: 1px solid black;
+    background-color: white;
+}
+.col-2 .sl-class{
+    width: auto;
+    border-radius: 5px;
+    border-style: none;
+    background-color: lightgray
+}
+.col-2 h1{
+    display: flex;
+    justify-content: center;
+}
+.col-2 select{
+    font-size: 20px;
+    border: 5px solid;
+}
+.col-2 .cart{
+        display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    margin-top: 20%;
+}
+.col-2 .mid{
+        display: flex;
+    justify-content: center;
+    /* align-items: initial; */
+    /* justify-items: center; */
+    margin-top: 10%;
+}
+.col-2 .new{
+        display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color:red;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: lightgray;
+}
+.col-2  .old{
+     display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color:red;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #666;
+    text-decoration: line-through;
+        background-color: lightgray;
+}
+ a.btn.add1{
+    background-color: yellowgreen;
+}
+a.btn{
+    background-color: red;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    height: 20%;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.col-2-1  img{
+    width: 100%;
+    height: 79%;
+}
+.discrption{
+    background-color: white;
+    width: 91.5%;
+} 
+
+/*pagination*/
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    
+}
+.pagination_item{
+    
+}
+ul.pagination.home-product-pagination{
+    margin: 40px 0px 32px 0px;
+}
+.pagination_item_active .pagination_item_link{
+    color: white;
+    background-color: red; 
+}
+.pagination_item_link{
+    display: block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #939393;
+    min-width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center; 
+}
+.pagination_item_icon{
+    
+}
+
+/*user*/
+a.picture_user{
+        border: 1px solid;
+    padding: 10px;
+    background-color: black
+}
+i.fas.fa-user-circle{
+    margin-right: 10px;
+}
