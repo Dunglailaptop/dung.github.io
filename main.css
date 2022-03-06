@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+}
+/* header */
+
+.header{
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: white;
+padding: 0 12px;
+}
+.header__icon{
+display: flex;
+align-items: center;
+
+}
+.header__linklogo{
+padding-right: 20px;
+}
+.header__pic{
+width: 130px;
+height: auto;
+}
+.header__tittle{
+font-size: 30px;
+}
+.header_final{
+
+}
+.header__help{
+font-size: 20px;
+text-decoration: none;
+color: black;
+}
+.header__logotwo{
+    display: none;
+}
+/* container */
+.container{
+    background-color: rgb(238, 77, 45);
+}
+.container__body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__logo{
+    width: 50%;
+}
+.container__logo__pic{
+    height: 600px;
+}
+.container__logo__pic .container__pic{
+
+}
+.container__login{
+   
+    background-color: white;
+    width: 398px;
+    height: 482px;
+}
+.container__headerlogin{
+margin-top: 12px;
+
+}
+.container__loginmenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px ;
+    padding-left: 24px;
+}
+.container__dgnhap {
+    margin-right: 24px;
+    font-size: 20px;
+}
+.container__qrcode {
+    display: flex;
+    align-items: center;
+    border: 4px solid;
+    border-color: #ffbf00;
+}
+.container__qrcodetittle {
+    
+    
+    font-size: 20px;
+    margin-right: 5px;
+}
+.container__qricon {
+    font-size: 20px;
+    cursor: pointer;
+}
+.container__midlogin{
+    
+}
+.container__input{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+.container__text{
+    width: 336px;
+    height: 38px;
+}
+.container_htmlinput{
+    width: 100%;
+    height: 100%;
+}
+.container__input__button{
+    display: flex;
+    justify-self: center;
+
+}
+.container__input__button{
+    display: flex;
+    justify-content: center;
+}
+.container__button1{
+      width: 344px;
+      height: 44px;
+      margin-top: 34px;
+      background-color: red;
+      border-color: red;
+      color: white;
+      margin-top:0px;
+      margin-left: 10px;
+}
+.container__forget{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 24px 10px 32px;
+    color:#05a ;
+}
+.container__forget__password{
+   
+}
+.container__and{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 337px;
+    padding: 0 35px;
+}
+.container__and__1 {
+    height: 0.5px;
+    width: 140px;
+    background-color: #dbdbdb;
+}
+.container__and__text{
+    padding: 0 1rem;
+    color: #ccc;
+}
+.container__and--buttonface{
+    margin: 12px 0;
+    height: 50px;
+}
+.container__buttonface{
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid rgba(0,0,0,.26);
+    background-color: #fff;
+    color: rgba(0,0,0,.87);
+    padding: 0 2px;
+    border-radius: 2px;
+    width: 100%;
+    height: 40px;
+    font-size: .875rem;
+    margin: 0 3px;
+}
+.container__logo__buttonface2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__logo__buttonface2 img{
+    width: 25px;
+    height: auto;
+    margin: 0 5px;
+}
+.container__finaltittle {
+    padding: 24px 0;
+    color: rgba(0,0,0,.26);
+}
+.container__finaltittle a {
+    color: #ee4d2d;
+    text-decoration: none;
+}
+/* responsive */
+/* mobile */
+@media only screen and (max-width: 46.1875em) {
+   .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0 12px;
+    border-bottom: solid gainsboro;
+    height: 40px;
+   }
+   .header__tittle{
+       font-size: 16px;
+   }
+   .header__help{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+   }
+   .header__linklogo{
+       display: none;
+   }
+   .header__logotwo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   }
+   .header__logotwo img{
+    width: 20%;
+    padding: 12px;
+   }
+    .container{
+       background-color: white;
+   }
+   .container__body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+   .container__logo{
+       display: none;
+   }
+
+}
+/* tablet */
+@media only screen and(min-width: 46.25em) and (max-width:63.9375em){
+ 
+}
+
